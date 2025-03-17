@@ -149,6 +149,8 @@ lazy val core = myCrossProject("core")
       Dependencies.refined,
       Dependencies.scalacacheCaffeine,
       Dependencies.tomlj,
+      // for artifact registry support
+      "dev.rolang" %% "gar-coursier" % "0.1.3",
       Dependencies.logbackClassic % Runtime,
       Dependencies.catsLaws % Test,
       Dependencies.circeLiteral % Test,
